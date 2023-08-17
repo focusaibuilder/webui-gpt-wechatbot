@@ -102,7 +102,7 @@ class ChatChannel(Channel):
                 if match_prefix is not None or match_contain is not None:
                     flag = True
                     if match_prefix:
-                        content = content.replace(match_prefix, "", 1).strip()
+                        content = content.replace(match_prefix, match_prefix, 1).strip()
                 if context["msg"].is_at:
                     logger.info("[WX]receive group at")
                     if not conf().get("group_at_off", False):
@@ -226,7 +226,7 @@ class ChatChannel(Channel):
                         reply = super().build_text_to_voice(reply.content)
                         return self._decorate_reply(context, reply)
                     if context.get("isgroup", False):
-                        reply_text = "@" + context["msg"].actual_user_nickname + "\n" + reply_text.strip()
+                        #reply_text = "@" + context["msg"].actual_user_nickname + "\n" + reply_text.strip()
                         reply_text = conf().get("group_chat_reply_prefix", "") + reply_text + conf().get("group_chat_reply_suffix", "")
                     else:
                         reply_text = conf().get("single_chat_reply_prefix", "") + reply_text + conf().get("single_chat_reply_suffix", "")
