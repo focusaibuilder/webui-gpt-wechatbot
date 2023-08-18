@@ -1,8 +1,4 @@
 # webui-GPT-wechatbot
-README.md
-markdown
-Copy
-# webui-GPT-wechatbot
 
 webui-GPT-wechatbot 是一个简洁易用的微信群聊天机器人，通过 webui 进行控制，界面干净且用户友好。
 
