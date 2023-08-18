@@ -1,1 +1,1 @@
-# webui-wx
+# webui-GPT-wechatbot
