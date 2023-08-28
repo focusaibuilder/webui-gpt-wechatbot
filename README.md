@@ -26,9 +26,11 @@ pip install -r requirements.txt
 启动 webui-GPT-wechatbot，执行以下命令：
 
 bash
+多开
 Copy
-python web.py
-然后，打开你的 web 浏览器，访问 http://localhost:5000，你就可以开始使用 webui-GPT-wechatbot 了。
+python web.py 1
+然后，打开你的 web 浏览器，访问 http://localhost:5001，你就可以开始使用 webui-GPT-wechatbot 了。
+python web.py 2 同理
 
 功能
 微信群聊天机器人：通过 webui 控制，可以在微信群中发送和接收消息。
